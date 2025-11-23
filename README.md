@@ -1,4 +1,5 @@
 "# DS-project-" 
 
 Project Members:
-Halima Farooq
+Alina Farooq
+Haleema Sadia
