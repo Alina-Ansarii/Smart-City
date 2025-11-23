@@ -1,0 +1,5 @@
+/DS-PROJECT
+/.vs
+/x-64
+*.sln
+*.vcxproj*
