@@ -1,96 +1,82 @@
-# Smart City Management System
+# 🏙️ Smart City — Data Structures Project
 
-A comprehensive C++ system for managing and integrating multiple city sectors including Transportation, Education, Medical, Commercial, Population, and Public Facilities.
-
-## Quick Start
-
-1. **Launch the Program**: Run `FINAL_PROJECT.exe`
-2. **Load Data**: Select option `61` from the main menu to load CSV data files
-3. **Explore Features**: Use the main menu to navigate through different modules and operations
-
-## Main Menu Structure
-
-### **Tier 1: Essential Functions (1-5)**
-Quick access to the most important city operations:
-- **Option 1**: Smart City Dashboard - Overview of all city systems
-- **Option 2**: Emergency Response - Find emergency services by Citizen CNIC
-- **Option 3**: Find All Nearest Facilities - Locate nearest facilities of all types
-- **Option 4**: Generate Citizen Health Profile - View health information
-- **Option 5**: Integrate School Transport - Manage school transportation
-
-### **Tier 2: Advanced Functions (6-10)**
-Cross-module analytics and planning:
-- **Option 6**: Recommend Schools for Student
-- **Option 7**: Generate City Planning Report
-- **Option 8**: Find Nearest Pharmacy with Medicine
-- **Option 9**: Analyze Sector Health Metrics
-- **Option 10**: Plan Emergency Evacuation
-
-### **Module-Specific Operations (11-61)**
-
-#### **Transport Module (11-19)**
-- Register companies and bus stops
-- Manage buses and routes
-- Find nearest stops and emergency routing
-
-#### **Education Module (20-27)**
-- Register schools, departments, and classes
-- Manage students and subjects
-- View rankings and statistics
-
-#### **Medical Module (28-35)**
-- View hospitals and pharmacies
-- Check bed availability
-- Register patients and doctors
-- Search medicines
-
-#### **Commercial Module (36-44)**
-- Register malls and products
-- Search by name or category
-- View mall connectivity and statistics
-
-#### **Population Module (45-51)**
-- Manage city hierarchy (Sectors → Streets → Houses)
-- Register citizens and search records
-- View population statistics
-
-#### **Full Module Demos (52-57)**
-Run complete demonstrations of each module with sample data.
-
-#### **Additional Operations (58-61)**
-- **58**: Register Doctor
-- **59**: Register Patient
-- **60**: Connect Bus Stops
-- **61**: Load Data from CSV Files
-
-## CSV Files Format
-
-Place these files in the same directory as the executable:
-
-- **hospitals.csv**: HospitalID,Name,Sector,Latitude,Longitude
-- **pharmacies.csv**: PharmacyID,Name,Sector,Latitude,Longitude
-- **schools.csv**: SchoolID,Name,Sector,Latitude,Longitude,Rating
-- **stops.csv**: StopID,Name,Location,Latitude,Longitude
-- **buses.csv**: BusNumber,CompanyID,CompanyName,InitialStop,Capacity
-- **population.csv**: CNIC,Name,Age,Gender,Occupation,Sector,Street,HouseNum
-
-## Typical Workflow
-
-1. Start the program and select **Option 61** to load initial data from CSV files
-2. Use **Options 11-51** to manually register additional data or make changes
-3. Use **Options 1-10** for cross-module queries and analysis
-4. Use **Options 52-57** to see demonstrations of each module's capabilities
-5. Select **Option 0** to exit
-
-## Key Features
-
-✓ **Multi-Sector Integration** - 6 interconnected city sectors
-✓ **Geographic Search** - Find facilities by location coordinates
-✓ **Emergency Response** - Quick access to critical services
-✓ **Data Management** - Register, update, and search citizen records
-✓ **Analytics** - Generate reports and statistics
-✓ **Route Planning** - Find shortest paths and nearest facilities
+A Smart City simulation system built in **C++** that models real-world urban infrastructure using core data structures. The system handles city navigation, traffic management, emergency services, and resource/utility management — all powered by efficient data structure implementations.
 
 ---
 
-**Note**: Remember to connect bus stops (Option 60) after loading transport data for route calculations to work properly.
+## 🌆 About the Project
+
+This project simulates a smart city environment where various city systems interact with each other. From finding the shortest route across the city to dispatching emergency services and managing utilities, every feature is backed by an appropriate data structure chosen for optimal performance.
+
+---
+
+## ✨ Features
+
+- 🗺️ **City Navigation & Routing** — Find shortest paths between city locations using graph traversal algorithms
+- 🚦 **Traffic Management** — Monitor and manage traffic flow across city roads and intersections
+- 🚨 **Emergency Services** — Dispatch ambulances, fire trucks, and police using priority-based systems
+- ⚡ **Resource & Utility Management** — Track and allocate city resources like power, water, and waste
+
+---
+
+## 🛠️ Data Structures Used
+
+| Data Structure | Use Case |
+|---|---|
+| **Graph** | City road network, routing between locations |
+| **AVL / BST Tree** | Sorted lookup of city records and locations |
+| **Heap (Priority Queue)** | Emergency dispatch prioritization |
+| **Hash Table** | Fast lookup of city resources and utilities |
+| **Queue / Stack** | Traffic flow simulation, request processing |
+| **Linked List** | Dynamic management of city entities |
+
+---
+
+## 🚀 How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Alina-Ansarii/Smart-City.git
+   ```
+2. Open the project in **Visual Studio** or compile via terminal:
+   ```bash
+   g++ -o SmartCity main.cpp -std=c++17
+   ./SmartCity
+   ```
+
+---
+
+## 📁 Project Structure
+
+```
+Smart-City/
+├── main.cpp               # Entry point
+├── graph.h/.cpp           # City road network (Graph)
+├── avl.h/.cpp             # AVL / BST Tree implementation
+├── heap.h/.cpp            # Priority queue for emergency services
+├── hashtable.h/.cpp       # Hash table for resource management
+├── queue.h/.cpp           # Queue/Stack for traffic simulation
+├── linkedlist.h/.cpp      # Linked list utilities
+└── README.md              # Project documentation
+```
+
+> File names may vary — update this to match your actual structure.
+
+---
+
+## 👥 Authors
+
+- **Alina Ansari** — [GitHub](https://github.com/Alina-Ansarii)
+
+---
+
+## 📚 Course
+
+**Data Structures (DS)**  
+3rd Semester — FAST NUCES
+
+---
+
+## 📄 License
+
+This project was developed for academic purposes.
